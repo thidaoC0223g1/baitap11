@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt(''));
+    let count = 0;
+    for (let i = 2; i <= n; i++) {
+        for (let j = 1; j <= (i / 2); j++) {
+            if (i % j === 0) {
+                count++
+            }
+        }
+        if (count === 1) {
+            document.write(i + '<br>')
+        }
+        count = 0;
+    }
+
+</script>
+</body>
+</html>
